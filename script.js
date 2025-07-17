@@ -10,3 +10,15 @@ function checkClick() {
     result.innerHTML = txtInput.value + " is NOT a palindrome."
   }
 }
+
+function isPallindrome(s) {
+  s = s.toString().toLowerCase().replace(/[^a-z0-9]/g, "");
+  var left = 0, right = s.length - 1;
+
+  while (left<right) {
+    if (s[left]!=s[right]) {
+      return false;
+    }
+  }
+  return true;
+}
