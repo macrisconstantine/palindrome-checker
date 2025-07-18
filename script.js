@@ -21,4 +21,4 @@ function isPallindrome(s) {
     }
   }
   return true;
-}
+} 
