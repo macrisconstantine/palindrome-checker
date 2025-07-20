@@ -27,7 +27,7 @@ body {
   border: none;
   font-size: large;
   box-shadow: 0 3px 3px grey;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .btn:hover {
@@ -50,4 +50,8 @@ body {
   gap: 20px;
   display: flex;
   flex-direction: column;
+}
+
+#result {
+  font-size: large;
 }
