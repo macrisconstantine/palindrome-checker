@@ -2,8 +2,9 @@ function checkClick() {
   const txtInput = document.getElementById('text-input') 
   if (txtInput.value == "") {
     alert("please input a value");
+    return false;
   }
-  if (txtInput.value.length == 1 || isPallindrome(txtInput)) {
+  if (txtInput.value.length == 1 || isPallindrome(txtInput.value)) {
     result.innerHTML = txtInput.value + " is a palindrome."
   } else
   {
@@ -16,9 +17,12 @@ function isPallindrome(s) {
   var left = 0, right = s.length - 1;
 
   while (left<right) {
+
     if (s[left]!=s[right]) {
       return false;
     }
+    left++;
+    right--;
   }
   return true;
-} // this might be
+}
